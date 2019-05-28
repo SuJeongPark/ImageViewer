@@ -42,19 +42,21 @@
             // 
             this.btnPrev.Location = new System.Drawing.Point(12, 199);
             this.btnPrev.Name = "btnPrev";
-            this.btnPrev.Size = new System.Drawing.Size(112, 56);
+            this.btnPrev.Size = new System.Drawing.Size(95, 56);
             this.btnPrev.TabIndex = 0;
             this.btnPrev.Text = "이전";
             this.btnPrev.UseVisualStyleBackColor = true;
+            this.btnPrev.Click += new System.EventHandler(this.BtnPrev_Click);
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(194, 199);
+            this.btnNext.Location = new System.Drawing.Point(205, 199);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(112, 56);
+            this.btnNext.Size = new System.Drawing.Size(101, 56);
             this.btnNext.TabIndex = 1;
             this.btnNext.Text = "다음";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.BtnNext_Click);
             // 
             // picImg
             // 
@@ -68,9 +70,9 @@
             // lblNum
             // 
             this.lblNum.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblNum.Location = new System.Drawing.Point(136, 216);
+            this.lblNum.Location = new System.Drawing.Point(113, 216);
             this.lblNum.Name = "lblNum";
-            this.lblNum.Size = new System.Drawing.Size(50, 23);
+            this.lblNum.Size = new System.Drawing.Size(86, 23);
             this.lblNum.TabIndex = 3;
             this.lblNum.Text = "/";
             this.lblNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -136,6 +138,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "사진첩";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picImg)).EndInit();
             this.ResumeLayout(false);
 
